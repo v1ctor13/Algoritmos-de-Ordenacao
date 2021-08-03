@@ -3,6 +3,7 @@ package ComparativoAlgoritmos;
 import QuickSort.QuickSort;
 import HeapSort.HeapSort;
 import BucketSort.BucketSort;
+import Util.LeitorDados;
 import java.util.ArrayList;
 
 /**
@@ -20,9 +21,9 @@ public class Run {
         ArrayList<Integer> vetorHs = new ArrayList<>();
         ArrayList<Integer> vetorBs = new ArrayList<>();
         
-        LeitorDados.ler(vetorQs);
-        LeitorDados.ler(vetorHs);
-        LeitorDados.ler(vetorBs);
+        LeitorDados.operacoes.ler(vetorQs);
+        LeitorDados.operacoes.ler(vetorHs);
+        LeitorDados.operacoes.ler(vetorBs);
         
         System.out.println("vetor não ordenado: " + vetorQs);
         System.out.println("vetor não ordenado: " + vetorHs);
